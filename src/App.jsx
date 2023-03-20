@@ -1,5 +1,5 @@
 import { Category } from "./components/Category";
-import { Restaurant } from "./components/Restaurant";
+import { RestaurantList } from "./components/RestaurantList";
 import { SearchBox } from "./components/SearchBox";
 import "./css/App.css";
 
@@ -11,7 +11,7 @@ function App() {
         <div className="app-category">
           <Category />
         </div>
-        <Restaurant />
+        <RestaurantList />
       </div>
     </div>
   );
