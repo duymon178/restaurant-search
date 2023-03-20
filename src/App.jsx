@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { SearchBox } from "./components/SearchBox";
 import { Category } from "./components/Category";
+import { Restaurant } from "./components/Restaurant";
+import { SearchBox } from "./components/SearchBox";
 import "./css/App.css";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <div className="app-category">
           <Category />
         </div>
+        <Restaurant />
       </div>
     </div>
   );

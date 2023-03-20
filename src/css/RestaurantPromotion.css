@@ -1,0 +1,8 @@
+.res-promotion {
+  display: flex;
+  margin: auto;
+  border-bottom-right-radius: 15px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.813rem;
+  color: white;
+}

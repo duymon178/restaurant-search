@@ -1,5 +1,5 @@
-import "../css/SearchBox.css";
 import { BsSearch } from "react-icons/bs";
+import "../css/SearchBox.css";
 
 export function SearchBox() {
   return (

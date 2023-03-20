@@ -1,0 +1,42 @@
+.restaurant {
+  max-width: 18.438rem;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.restaurant .cover-img {
+  height: 11.25rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.restaurant .description {
+  padding: 1rem;
+}
+
+.restaurant .description .res-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant .description .res-info {
+  display: flex;
+  column-gap: 5px;
+}
+
+.res-rating {
+  display: flex;
+  place-items: center;
+  column-gap: 5px;
+}
+
+.promotion {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
