@@ -15,7 +15,7 @@ export function Restaurant() {
         <div className="res-name">Domino's pizza</div>
         <div className="res-info">
           <RestaurantTag>
-            <div class="res-rating">
+            <div className="res-rating">
               <BsFillStarFill /> 4.7
             </div>
           </RestaurantTag>

@@ -1,7 +1,7 @@
 import "../css/RestaurantList.css";
 import { Restaurant } from "./Restaurant";
 
-export function RestaurantList() {
+export function RestaurantList({ searchTerm, category }) {
   return (
     <>
       <div className="res-list">
