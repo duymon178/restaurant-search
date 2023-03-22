@@ -18,7 +18,7 @@ function App() {
         <div className="app-category">
           <Category category={category} setCategory={setCategory} />
         </div>
-        <RestaurantList />
+        <RestaurantList searchTerm={searchTerm} category={category} />
       </div>
     </div>
   );

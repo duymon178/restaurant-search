@@ -3,28 +3,37 @@ import "../css/Restaurant.css";
 import { RestaurantPromotion } from "./RestaurantPromotion";
 import { RestaurantTag } from "./RestaurantTag";
 
-export function Restaurant() {
+export function Restaurant({ restaurant }) {
   return (
     <div className="restaurant">
       <div
         className="cover-img"
         style={{
-          backgroundImage: `url(https://source.unsplash.com/random/400x400?Pizza)`,
+          backgroundImage: `url(${restaurant.imageUrl})`,
         }}></div>
       <div className="description">
-        <div className="res-name">Domino's pizza</div>
+        <div className="res-name">{restaurant.restaurant}</div>
         <div className="res-info">
           <RestaurantTag>
             <div className="res-rating">
-              <BsFillStarFill /> 4.7
+              <BsFillStarFill /> {restaurant.rating.toFixed(1)}
             </div>
           </RestaurantTag>
-          <RestaurantTag>50-70 min</RestaurantTag>
+          <RestaurantTag>
+            {restaurant.minCookTime}-{restaurant.maxCookTime} min
+          </RestaurantTag>
+          {restaurant.isNew && (
+            <RestaurantTag>
+              <span className="new-restaurant">New</span>
+            </RestaurantTag>
+          )}
         </div>
       </div>
-      <div className="promotion">
-        <RestaurantPromotion />
-      </div>
+      {restaurant.promotion && (
+        <div className="promotion">
+          <RestaurantPromotion promotion={restaurant.promotion} />
+        </div>
+      )}
     </div>
   );
 }
