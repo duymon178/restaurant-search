@@ -26,7 +26,8 @@
 
 .restaurant .description .res-info {
   display: flex;
-  column-gap: 5px;
+  gap: 5px;
+  flex-flow: row wrap;
 }
 
 .res-rating {

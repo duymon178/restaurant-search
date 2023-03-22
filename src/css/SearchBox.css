@@ -4,6 +4,7 @@
   width: 21rem;
   font-size: 0.875rem;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .search-wrapper {
@@ -15,4 +16,10 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 30em) /* 480px */ {
+  .search-box {
+    width: 100%;
+  }
 }
